@@ -74,8 +74,6 @@ body {
 
 .header {
   position: fixed;
-  top: 0;
-  left: 0;
   z-index: 1;
   width: 100%;
   padding: 1rem 0;
@@ -210,11 +208,6 @@ body {
   top: 35%;
   left: 0;
   width: 100%;
-}
-
-.hero .hero__content.show {
-  opacity: 0;
-  display: none;
 }
 
 .hero .hero__content {
@@ -354,17 +347,16 @@ body {
 .card .card__image {
   padding: 0 0 60%;
   position: relative;
-  -webkit-filter: blur(0.2rem);
-          filter: blur(0.2rem);
-  -webkit-transition: -webkit-filter .3s ease-in-out;
-  transition: -webkit-filter .3s ease-in-out;
-  transition: filter .3s ease-in-out;
-  transition: filter .3s ease-in-out, -webkit-filter .3s ease-in-out;
+  -webkit-transition: opacity .3s, -webkit-transform .3s ease-in-out;
+  transition: opacity .3s, -webkit-transform .3s ease-in-out;
+  transition: transform .3s ease-in-out, opacity .3s;
+  transition: transform .3s ease-in-out, opacity .3s, -webkit-transform .3s ease-in-out;
 }
 
 .card .card__image:hover {
-  -webkit-filter: blur(0);
-          filter: blur(0);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  opacity: .9;
 }
 
 .card img {
@@ -501,6 +493,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 2rem;
 }
 

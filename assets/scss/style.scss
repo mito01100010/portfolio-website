@@ -68,8 +68,6 @@ body {
 
 .header {
     position: fixed;
-    top: 0;
-    left: 0;
     z-index: 1;
     width: 100%;
     padding: 1rem 0;
@@ -181,12 +179,7 @@ body {
         left: 0;
         width: 100%;
     }
-
-    .hero__content.show {
-		opacity: 0;
-		display: none;
-	}
-
+    
     .hero__content {
         padding: 1.5rem;
         max-width: 40rem;
@@ -294,12 +287,12 @@ body {
     .card__image {
         padding: 0 0 60%;
         position: relative;
-        filter: blur(.2rem);
-        transition: filter .3s ease-in-out;
+        transition: transform .3s ease-in-out, opacity .3s;
     }
 
     .card__image:hover {
-        filter: blur(0);
+        transform: scale(1.1);
+        opacity: .9;
     }
 
     img {
@@ -413,6 +406,7 @@ body {
 
 .socials {
     display: flex;
+    justify-content: center;
     gap: 2rem;
 
     li {
