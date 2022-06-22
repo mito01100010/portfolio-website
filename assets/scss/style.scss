@@ -354,10 +354,6 @@ body {
 
     li {
         list-style-type: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 2rem;
     }
 
     li + li {
@@ -365,9 +361,11 @@ body {
     }
 
     a {
+        display: inline-block;
         color: #303030;
         text-decoration: none;
         transition: color .3s;
+        vertical-align: middle;
     }
 
     a:hover {
@@ -375,6 +373,8 @@ body {
     }
 
     .list__image {
+        display: inline-block;
+        vertical-align: middle;
         width: 3rem;
         height: 3rem;
     }

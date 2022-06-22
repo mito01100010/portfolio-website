@@ -426,16 +426,6 @@ body {
 
 .list-certificates li {
   list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 2rem;
 }
 
 .list-certificates li + li {
@@ -443,10 +433,12 @@ body {
 }
 
 .list-certificates a {
+  display: inline-block;
   color: #303030;
   text-decoration: none;
   -webkit-transition: color .3s;
   transition: color .3s;
+  vertical-align: middle;
 }
 
 .list-certificates a:hover {
@@ -454,6 +446,8 @@ body {
 }
 
 .list-certificates .list__image {
+  display: inline-block;
+  vertical-align: middle;
   width: 3rem;
   height: 3rem;
 }
