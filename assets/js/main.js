@@ -14,4 +14,5 @@ document.querySelectorAll('nav a').forEach(link =>
         navTrigger.classList.remove('show');
         hamMenu.classList.remove('show');
         body.classList.remove('hidden-overflow');
-}))
+    })
+);

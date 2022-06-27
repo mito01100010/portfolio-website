@@ -174,13 +174,6 @@ body {
           transform-origin: 100% 0;
 }
 
-.nav a.active:after {
-  -webkit-transform: none;
-          transform: none;
-  -webkit-transform-origin: 0 0;
-          transform-origin: 0 0;
-}
-
 .nav a:hover:after {
   -webkit-transform: none;
           transform: none;
@@ -190,6 +183,15 @@ body {
 
 .hero {
   position: relative;
+}
+
+.hero h1 {
+  margin-bottom: 1.5rem;
+}
+
+.hero h2 {
+  line-height: 1.55;
+  letter-spacing: .03rem;
 }
 
 .hero .hero__image {
@@ -324,9 +326,9 @@ body {
 
 .grid .grid__col--1of3 {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 33%;
-          flex: 0 0 33%;
-  max-width: 33%;
+      -ms-flex: 0 0 33.33%;
+          flex: 0 0 33.33%;
+  max-width: 33.33%;
 }
 
 @media screen and (max-width: 720px) {

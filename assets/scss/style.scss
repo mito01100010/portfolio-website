@@ -149,11 +149,6 @@ body {
         transform-origin: 100% 0;
     }
 
-    a.active:after {
-        transform: none;
-        transform-origin: 0 0;
-    }
-
     a:hover:after {
         transform: none;
         transform-origin: 0 0;
@@ -162,6 +157,15 @@ body {
 
 .hero {
     position: relative;
+
+    h1 {
+        margin-bottom: 1.5rem;
+    }
+
+    h2 {
+        line-height: 1.55;
+        letter-spacing: .03rem;
+    }
 
     .hero__image {
         height: 100vh;
@@ -267,8 +271,8 @@ body {
     }
 
     .grid__col--1of3 {
-        flex: 0 0 33%;
-        max-width: 33%;
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
 
         @media screen and (max-width: 720px) {
             max-width: 90%;
