@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/scss/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;1,400&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/50daf1e86f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="shell">
+            <div class="header__inner">
+                <a href="#home" class="logo">
+                    <img src="assets/images/logo.png" alt="logo" width="166" height="137" >
+                </a>
+
+                <a href="#" class="nav-trigger">
+                    <span></span>
+        
+                    <span></span>
+        
+                    <span></span>
+                </a>
+
+                <div class="header__content js-menu">
+                    <nav class="nav">
+                        <ul>
+                            <li>
+                                <a href="#home">home</a>
+                            </li>
+
+                            <li>
+                                <a href="#about">about</a>
+                            </li>
+
+                            <li>
+                                <a href="#projects">projects</a>
+                            </li>
+
+                            <li>
+                                <a href="#skills">skills</a>
+                            </li>
+
+                            <li>
+                                <a href="#contacts">contacts</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <div id="home" class="hero">
+        <figure class="hero__image">
+            <img src="assets/images/hero.jpg" alt="">
+        </figure>
+
+        <div class="hero__inner">
+            <div class="shell">
+                <div class="hero__content">
+                    <h1>Hello there,</h1>
+
+                    <h2>
+                        My name is Dimitar<br>
+                        I'm into Web Development
+                    </h2>
+                    
+                    <a class="btn" href="#about">About me</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="about" class="section">
+        <div class="shell">
+            <div class="section__head">
+                <h2>About me</h2>
+            </div>
+
+            <div class="section__body">
+                <figure class="section__image">
+                    <img src="assets/images/about-img.jpg" alt="">
+                </figure>
+
+                <div class="section__content">
+                    <p>
+                        I am a passionate person with interest and desire of learning 
+                        different web development technologies. I have 4 months experience as web 
+                        developer intern, level B2 English speeker and level C1 introvert 
+                        with self-irony and sense of humor. 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section section--height">
+        <div class="shell">
+            <div class="section__head">
+                <h2>Projects</h2>
+            </div>
+            
+            <div class="grid">
+                <div class="grid__col grid__col--1of3">
+                    <a href="https://codepen.io/mito01100010/full/qBxQjzW" target="_blank" class="card">
+                        <figure class="card__image">
+                            <img src="assets/images/pomodoro-timer.JPG" alt="">
+                        </figure>
+
+                        <figcaption>Pomodoro Timer</figcaption>
+                    </a>
+                </div>
+
+                <div class="grid__col grid__col--1of3">
+                    <a href="https://github.com/mito01100010/warehouse-public" target="_blank" class="card">
+                        <figure class="card__image">
+                            <img src="assets/images/warehouse.png" alt="">
+                        </figure>
+
+                        <figcaption>Warehouse(full stack)</figcaption>
+                    </a>
+                </div>
+
+                <div class="grid__col grid__col--1of3">
+                    <a href="https://codepen.io/mito01100010/full/oNEPYOK" target="_blank" class="card">
+                        <figure class="card__image">
+                            <img src="assets/images/drum-machine.JPG" alt="">
+                        </figure>
+
+                        <figcaption>Drum Machine</figcaption>
+                    </a>
+                </div>
+
+                <div class="grid__col grid__col--1of3">
+                    <a href="https://codepen.io/mito01100010/full/jOZpLeq" target="_blank" class="card">
+                        <figure class="card__image">
+                            <img src="assets/images/markdown-previewer.JPG" alt="">
+                        </figure>
+
+                        <figcaption>Markdown Previewer</figcaption>
+                    </a>
+                </div>
+
+                <div class="grid__col grid__col--1of3">
+                    <a href="https://codepen.io/mito01100010/full/BaYVmzx" target="_blank" class="card">
+                        <figure class="card__image">
+                            <img src="assets/images/random-quote.JPG" alt="">
+                        </figure>
+
+                        <figcaption>Random Quote</figcaption>
+                    </a>
+                </div>
+
+                <div class="grid__col grid__col--1of3">
+                    <a href="https://mito01100010.github.io/freeCodeCamp-portfolio-page/" target="_blank" class="card">
+                        <figure class="card__image">
+                            <img src="assets/images/fake-portfolio.JPG" alt="">
+                        </figure>
+
+                        <figcaption>Fake Portfolio</figcaption>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section section--height">
+        <div class="shell">
+            <div class="section__head">
+                <h2>Skills</h2>
+            </div>
+
+            <div class="grid">
+                <div class="grid__col grid__col--1of3">
+                    <div class="skill-component">
+                        <div class="skill__head">
+                            <h3>Feel comfortable working with</h3>
+                        </div>    
+
+                        <div class="skill__content">
+                            <ul class="list-skills">
+                                <li>
+                                    <figure class="list__image">
+                                        <img src="assets/images/html-icon.png" alt="">
+                                    </figure>
+                                    HTML
+                                </li>
+
+                                <li>
+                                    <figure class="list__image">
+                                        <img src="assets/images/css-icon.png" alt="">
+                                    </figure>
+                                    CSS
+                                </li>
+
+                                <li>
+                                    <figure class="list__image">
+                                        <img src="assets/images/sass-icon.png" alt="">
+                                    </figure>
+                                    SCSS
+                                </li>
+
+                                <li>
+                                    <figure class="list__image">
+                                        <img src="assets/images/js-icon.png" alt="">
+                                    </figure>
+                                    JavaScript
+                                </li>
+
+                                <li>
+                                    <figure class="list__image">
+                                        <img src="assets/images/git-icon.png" alt="">
+                                    </figure>
+                                    Git
+                                </li>
+
+                                <li>
+                                    <figure class="list__image">
+                                        <img src="assets/images/github-icon.png" alt="">
+                                    </figure>
+                                    GitHub
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid__col grid__col--1of3">
+                    <div class="skill-component">
+                        <div class="skill__head">
+                            <h3>
+                                I have also worked with
+                            </h3>
+                        </div>
+                    
+                        <div class="skill__content">
+                            <ul class="list-skills">
+                                <li>
+                                    <figure class="list__image">
+                                        <img src="assets/images/react-icon.png" alt="">
+                                    </figure>
+                                    ReactJS
+                                </li>
+
+                                <li>
+                                    <figure class="list__image">
+                                        <img src="assets/images/mysql.png" alt="">
+                                    </figure>
+                                    MySQL
+                                </li>
+
+                                <li>
+                                    <figure class="list__image">
+                                        <img src="assets/images/terminal-icon.png" alt="">
+                                    </figure>
+                                    Linux(debian based)
+                                </li>
+                                
+                                <li>
+                                    <figure class="list__image">
+                                        <img src="assets/images/java-icon.png" alt="">
+                                    </figure>
+                                    Java
+                                </li>
+
+                                <li>
+                                    <figure class="list__image">
+                                        <img src="assets/images/nodejs.png" alt="">
+                                    </figure>
+                                    nodeJS 
+                                </li>
+
+                                <li>
+                                    <figure class="list__image">
+                                        <img src="assets/images/npm-icon.png" alt="">
+                                    </figure>
+                                    npm
+                                </li>
+
+                                <li>
+                                    <figure class="list__image">
+                                        <img src="assets/images/photoshop-icon.png" alt="">
+                                    </figure>
+                                    Photoshop
+                                </li>
+
+                                <li>
+                                    <figure class="list__image">
+                                        <img src="assets/images/vim-icon.png" alt="">
+                                    </figure>
+                                    Vim
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid__col grid__col--1of3">
+                    <div class="skill-component">
+                        <div class="skill__head">
+                            <h3>
+                                Certificates
+                            </h3>
+                        </div>
+
+                        <div class="skill__content">
+                            <ul class="list-certificates">
+                                <li>
+                                    <a href="https://www.freecodecamp.org/certification/fcc9d1c4b67-82f4-4054-aab1-d1186ccdb59c/responsive-web-design" target="_blank">
+                                        <figure class="list__image">
+                                            <img src="assets/images/freecodecamp-icon.png" alt="">
+                                        </figure>Responsive Web Design
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="https://www.freecodecamp.org/certification/fcc9d1c4b67-82f4-4054-aab1-d1186ccdb59c/javascript-algorithms-and-data-structures" target="_blank">
+                                        <figure class="list__image">
+                                            <img src="assets/images/freecodecamp-icon.png" alt="">
+                                        </figure>JavaScript Algorithms and Data Structures
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="https://www.freecodecamp.org/certification/fcc9d1c4b67-82f4-4054-aab1-d1186ccdb59c/front-end-development-libraries" target="_blank">
+                                        <figure class="list__image">
+                                            <img src="assets/images/freecodecamp-icon.png" alt="">
+                                        </figure>Front End Development Libraries
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="https://app.testdome.com/cert/23c92b177cb14d209d50a9cc1fd57bd5" target="_blank">
+                                        <figure class="list__image">
+                                            <img src="assets/images/testdome-icon.png" alt="">
+                                        </figure>TestDome [HTML/CSS]
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="https://app.testdome.com/cert/2e635facb097412897e63699f8244d8a" target="_blank">
+                                        <figure class="list__image">
+                                            <img src="assets/images/testdome-icon.png" alt="">
+                                        </figure>TestDome [HTML/CSS and JavaScript]
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="https://coursera.org/share/71baa2fe686d0b60e6f20541ecf3c09e" target="_blank">
+                                        <figure class="list__image">
+                                            <img src="assets/images/coursera-icon.png" alt="">
+                                        </figure>Learning How to Learn
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contacts" class="section-center">
+        <div class="shell">
+            <div class="section__inner">
+                <h1>Let's work together...</h1>
+
+                <ul class="socials">
+                    <li>
+                        <a href="https://github.com/mito01100010" target="_blank"><i class="fab fa-github"></i><span>Github</span></a>
+                    </li>
+
+                    <li>
+                        <a href="mailto:mito0110010@gmail.com"><i class="fas fa-envelope"></i><span>Email</span></a>
+                    </li>
+                </ul>   
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
