@@ -384,7 +384,7 @@ body {
 .list-skills {
   background-color: rgba(0, 0, 0, 0.07);
   border-radius: 2rem;
-  padding: 2rem 1rem;
+  padding: 3rem 2rem;
   height: 100%;
 }
 
@@ -422,7 +422,7 @@ body {
 .list-certificates {
   background-color: rgba(0, 0, 0, 0.07);
   border-radius: 2rem;
-  padding: 2rem 1rem;
+  padding: 3rem 2rem;
   height: 100%;
 }
 
@@ -431,7 +431,7 @@ body {
 }
 
 .list-certificates li + li {
-  margin-top: 2rem;
+  margin-top: 1.6rem;
 }
 
 .list-certificates a {
@@ -459,6 +459,15 @@ body {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.list-certificates span {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: .4rem;
+  font-size: 1rem;
+  color: #568da3;
+  margin-top: 4rem;
 }
 
 .skill-component {
