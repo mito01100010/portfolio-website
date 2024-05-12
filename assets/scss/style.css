@@ -185,6 +185,7 @@ body {
 
 .hero {
   position: relative;
+  scroll-snap-align: center;
 }
 
 .hero h1 {
