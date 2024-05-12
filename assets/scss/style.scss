@@ -9,6 +9,7 @@
 *:after { box-sizing: inherit; }
 
 html {
+    scroll-snap-type: y mandatory;
     font-size: 62.5%;
     scroll-behavior: smooth;
 }
@@ -206,6 +207,7 @@ body {
 }
 
 .section {
+    scroll-snap-align: center;
     text-align: center;
     padding: 10rem 0;
     height: 100vh;
@@ -215,6 +217,7 @@ body {
     width: inherit;
 
     @media screen and (max-width: 1024px) {
+        scroll-snap-align: none;
         height: auto;
         padding: 5rem 0;
     }
@@ -395,7 +398,7 @@ body {
 }
 
 .skill-component {
-    height: 100%;
+    height: 85%;
 
     .skill__head {
         letter-spacing: .04rem;
@@ -426,7 +429,7 @@ body {
     }
 }
 
-.section-center {
+.section--center {
     background-color: #e4e4e4;
     font-style: italic;
     text-align: center;
