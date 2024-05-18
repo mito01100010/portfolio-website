@@ -188,6 +188,12 @@ body {
   scroll-snap-align: center;
 }
 
+@media screen and (max-width: 1024px) {
+  .hero {
+    scroll-snap-align: none;
+  }
+}
+
 .hero h1 {
   margin-bottom: 1.5rem;
 }
@@ -260,6 +266,12 @@ body {
   }
 }
 
+@media screen and (max-width: 720px) {
+  .section {
+    font-size: 1.4rem;
+  }
+}
+
 .section .section__head {
   margin-bottom: 4rem;
 }
@@ -290,6 +302,12 @@ body {
       -ms-flex: 0 0 55%;
           flex: 0 0 55%;
   padding: 6rem 8rem;
+}
+
+@media screen and (max-width: 720px) {
+  .section .section__content {
+    padding: 2rem 3rem;
+  }
 }
 
 .section .section__image {

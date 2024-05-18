@@ -160,6 +160,10 @@ body {
     position: relative;
     scroll-snap-align: center;
 
+    @media screen and (max-width: 1024px) {
+        scroll-snap-align: none;
+    } 
+
     h1 {
         margin-bottom: 1.5rem;
     }
@@ -223,6 +227,10 @@ body {
         padding: 5rem 0;
     }
 
+    @media screen and (max-width: 720px) {
+        font-size: 1.4rem;
+    }
+
     .section__head {
         margin-bottom: 4rem;
     }
@@ -243,6 +251,10 @@ body {
         order: -1;
         flex: 0 0 55%;
         padding: 6rem 8rem;
+
+        @media screen and (max-width: 720px) {
+            padding: 2rem 3rem;
+        }
     }
 
     .section__image {
